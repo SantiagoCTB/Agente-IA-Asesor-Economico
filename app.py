@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 # Configuración de la página
 st.set_page_config(page_title="Agente de Economia", page_icon="🏦")
 st.title("🏦 Agente de Economia con LangChain y Groq") # Updated title
-st.markdown("Pregunta sobre cultivos, fertilización, enfermedades de plantas y buenas prácticas agrícolas.")
+st.markdown("Pregunta tendencias económicas, conceptos financieros o escenarios de mercado.")
 
 # Token de Groq (configurado en Streamlit Secrets)
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"] # Changed secret key name
@@ -44,9 +44,9 @@ if st.button("Obtener respuesta"):
 # Ejemplos de preguntas para probar
 st.markdown("**Ejemplos de preguntas:**")
 st.markdown("""
-- ¿Cuáles son las mejores prácticas para fertilizar maíz?
-- ¿Cómo detectar y controlar la roya en el café?
-- ¿Qué cultivos son recomendables en suelos ácidos?
-- ¿Cuándo es el mejor momento para sembrar trigo en clima templado?
-- ¿Qué enfermedades afectan al tomate y cómo prevenirlas?
+- ¿Qué impacto tendría un aumento de la tasa de interés en el consumo y la inversión?
+- ¿Cómo afecta la inflación al poder adquisitivo de los hogares?
+- ¿Cuáles son las diferencias entre política fiscal y política monetaria?
+- ¿Qué escenarios podrían darse si el precio del petróleo cae un 20%?
+- ¿Cómo funciona el PIB y por qué es un indicador clave en la economía?
 """)
