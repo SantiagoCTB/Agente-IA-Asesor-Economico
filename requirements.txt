@@ -4,3 +4,4 @@ langchain-groq==0.1.5 # New dependency for Groq integration
 pydantic==2.8.2
 pydantic-core==2.20.1
 rich>=10.14.0,<14.0.0
+plotly
